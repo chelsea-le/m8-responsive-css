@@ -1,6 +1,44 @@
+/* Assign styles here */
+
 * {
     box-sizing: border-box;
 }
 
 
-/* Assign styles here */
+/* Flexbox container */
+
+.flexbox-container {
+    display: flex;
+    border: 1px solid black;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.flex-column {
+    padding: 20px;
+    flex-basis: 100%;
+}
+
+.content {
+    background: tomato;
+    text-align: center;
+    font-size: 4rem;
+    height: 100%;
+
+}
+
+@media screen and (min-width:992px) {
+    .flex-column {
+        flex-basis: 25%;
+    }
+}
+
+}
+@media screen and (min-width:768px) {
+    .flex-column {
+        flex-basis: 50%;
+    }
+}
